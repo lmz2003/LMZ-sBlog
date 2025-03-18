@@ -7,10 +7,10 @@ sticky: 1
 
 ![图片](https://img.cdn.sugarat.top/mdImg/MTY3MzE3MDUxOTMwMw==673170519303)
 
-更多细节见 https://theme.sugarat.top
+> 更多细节见 https://theme.sugarat.top
 
 ## 已支持功能
-介绍一下主要的，非所有
+<mark>介绍一下主要的，非所有</mark>
 
 * 博客首页
 * 文章列表

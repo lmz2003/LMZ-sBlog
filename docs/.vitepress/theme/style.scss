@@ -1,13 +1,75 @@
 .VPHome {
-  // 定义遮罩样式
-  background: radial-gradient(ellipse,
-      rgba(var(--bg-gradient-home), 1) 0%,
-      rgba(var(--bg-gradient-home), 0) 150%);
-
   // 自定义首页背景图
   &::before {
     // 图片来源：https://zhuanlan.zhihu.com/p/54060187
     background-image: url(./assets/bg.webp);
     background-size: cover;
   }
+
+  // 定义遮罩样式
+  background: radial-gradient(
+    ellipse,
+    rgba(var(--bg-gradient-home), 1) 0%,
+    rgba(var(--bg-gradient-home), 0) 150%
+  );
+}
+body {
+  font-family: 'Yozai Medium';
+  font-weight: '400';
+}
+
+strong {
+  text-shadow: 0.8px 0;
+}
+
+.MathJax {
+  overflow-y: hidden;
+}
+
+/* 浅色模式变量 */
+html[theme] {
+  --mark-bg: rgba(144, 202, 249, 0.25); /* 柔和浅蓝背景 */
+  --mark-text: #2a5caa; /* 深蓝文字 */
+  --mark-hover-bg: rgba(144, 202, 249, 0.4);
+  --mark-border: rgba(100, 149, 237, 0.3);
+  --hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 深色模式变量 */
+html[theme].dark {
+  --mark-bg: rgba(30, 144, 255, 0.15); /* 深蓝半透明背景 */
+  --mark-text: #b0e0e6; /* 浅青文字 */
+  --mark-hover-bg: rgba(12, 127, 241, 0.25);
+  --mark-border: rgba(70, 130, 180, 0.2);
+  --hover-shadow: 0 2px 12px rgb(255, 255, 255, 0.5);
+}
+
+/* 基础样式 */
+mark {
+  background-color: var(--mark-bg);
+  color: var(--mark-text);
+  border-radius: 4px;
+  padding: 0 0.4em;
+  border: 1px solid var(--mark-border);
+  transition: all 0.3s ease;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media (any-hover: hover) {
+  mark:hover {
+    background-color: var(--mark-hover-bg);
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-1px);
+  }
+}
+
+/* .vitepress/theme/style/blockquote.css */
+.vp-doc blockquote {
+  border-radius: 10px;
+  padding: 18px 20px 20px 15px;
+  position: relative;
+  background-color: var(--vp-c-gray-soft);
+  border-left: 6px solid var(--el-color-primary);
+  color: var(--vp-c-text-1);
 }
