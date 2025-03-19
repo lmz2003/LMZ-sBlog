@@ -72,14 +72,14 @@ const blogTheme = getThemeConfig({
   popover: {
     title: '公告',
     body: [
-      { type: 'text', content: '👇公众号👇---👇 微信 👇' },
+      { type: 'text', content: '👇 微信 👇' },
       {
         type: 'image',
-        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp'
+        src: "/docs/public/weixin.png"
       },
       {
         type: 'text',
-        content: '欢迎大家加群&私信交流'
+        content: '欢迎大家私信交流'
       },
       {
         type: 'text',
@@ -89,7 +89,7 @@ const blogTheme = getThemeConfig({
       {
         type: 'button',
         content: '作者博客',
-        link: 'https://sugarat.top'
+        link: 'https://blog-lemonz.maozi.io/'
       },
       {
         type: 'button',
