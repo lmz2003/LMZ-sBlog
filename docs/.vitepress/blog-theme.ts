@@ -53,11 +53,11 @@ const blogTheme = getThemeConfig({
   // 友链
   friend: [
     {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
+      nickname: 'ChatRobot',
+      des: '聊天对话机器人',
       avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top',
+        'https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png',
+      url: 'https://ai-dialog.maozi.io/',
     },
     {
       nickname: 'Vitepress',
@@ -75,30 +75,25 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇 微信 👇' },
       {
         type: 'image',
-        src: "/docs/public/weixin.png"
+        src: "/weixin.png"
       },
       {
         type: 'text',
         content: '欢迎大家私信交流'
       },
       {
-        type: 'text',
-        content: '文章首/文尾有群二维码',
-        style: 'padding-top:0'
-      },
-      {
         type: 'button',
         content: '作者博客',
         link: 'https://blog-lemonz.maozi.io/'
       },
-      {
-        type: 'button',
-        content: '加群交流',
-        props: {
-          type: 'success'
-        },
-        link: 'https://theme.sugarat.top/group.html',
-      }
+      // {
+      //   type: 'button',
+      //   content: '加群交流',
+      //   props: {
+      //     type: 'success'
+      //   },
+      //   link: 'https://theme.sugarat.top/group.html',
+      // }
     ],
     duration: 0
   },
