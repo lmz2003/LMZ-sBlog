@@ -66,7 +66,6 @@ const blogTheme = getThemeConfig({
       url: 'https://vitepress.dev/'
     }
   ],
-
   // 公告
   popover: {
     title: '公告',
