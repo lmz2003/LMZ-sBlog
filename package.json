@@ -2,17 +2,23 @@
   "name": "vitepress-blog",
   "version": "1.0.0",
   "private": true,
-  "author": "粥里有勺糖",
+  "author": "李程碑",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "format": "prettier --write docs",
+    "lint": "textlint --fix docs/**/*.md",
+    "cz": "npm run format && npm run lint && git add . && git cz"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.5.4",
     "element-plus": "^2.7.2",
+    "prettier": "^3.4.2",
+    "textlint": "^14.5.0",
+    "textlint-rule-ja-space-between-half-and-full-width": "^2.4.2",
     "vue": "3.5.12"
   },
   "directories": {
@@ -20,6 +26,7 @@
   },
   "devDependencies": {
     "pagefind": "^1.3.0",
+    "prettier-plugin-organize-imports": "^4.1.0",
     "sass": "^1.76.0",
     "typescript": "^5.4.5",
     "vitepress": "1.6.3"

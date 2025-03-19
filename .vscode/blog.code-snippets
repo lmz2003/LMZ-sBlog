@@ -1,0 +1,64 @@
+{
+	"blog-header": {
+	  "prefix": "blog-header",
+	  "body": [
+		"---",
+		"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+		"tags:",
+		"   - $2",
+		"---"
+	  ]
+	},
+	"info": {
+	  "prefix": "info",
+	  "body": [":::info", "$1", ":::"]
+	},
+	"warning": {
+	  "prefix": "warning",
+	  "body": [":::warning", "$1", ":::"]
+	},
+	"tip": {
+	  "prefix": "tip",
+	  "body": [":::tip", "$1", ":::"]
+	},
+	"details": {
+	  "prefix": "details",
+	  "body": [":::details", "$1", ":::"]
+	},
+	"danger": {
+	  "prefix": "danger",
+	  "body": [":::danger", "$1", ":::"]
+	},
+	"insert collapse js code": {
+	  "prefix": "detailjs",
+	  "body": [":::details", "```JavaScript", "$1", "```", ":::"]
+	},
+	"insert js code": {
+	  "prefix": "jscode",
+	  "body": ["```JavaScript", "$2", "```"]
+	},
+	"insert jsx code": {
+	  "prefix": "jsxcode",
+	  "body": ["```JavaScript", "$2", "```"]
+	},
+	"insert css code": {
+	  "prefix": "csscode",
+	  "body": ["```css", "$2", "```"]
+	},
+	"insert html code": {
+	  "prefix": "htmlcode",
+	  "body": ["```html", "$2", "```"]
+	},
+	"insert code group": {
+	  "prefix": "codegroup",
+	  "body": [":::code-group", "$1", ":::"]
+	},
+	"insert video": {
+	  "prefix": "video",
+	  "body": ["<VideoPlayer platform=\"local\" src=\"/videos/$1\" />"]
+	},
+	"index navigate": {
+	  "prefix": "index",
+	  "body": ["---", "hidden: true", "date: false", "author: false", "---"]
+	}
+  }

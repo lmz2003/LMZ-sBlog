@@ -1,7 +1,7 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // 导入主题的配置
-import { blogTheme } from './blog-theme'
+import { blogTheme } from './blog-theme';
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
 // 通常需要修改 base 路径，通常为“/仓库名/”
@@ -17,7 +17,7 @@ export default defineConfig({
   extends: blogTheme,
   // base,
   lang: 'zh-cn',
-  title: "云朵之上",
+  title: '云朵之上',
   description: 'Lemonz的博客主题,基于 vitepress 实现',
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
@@ -54,13 +54,34 @@ export default defineConfig({
     // },
     nav: [
       { text: '首页', link: '/' },
+      {
+        text: '前端基础',
+        items: [
+          { text: 'JavaScript', link: '/Frontend/Javascript' },
+          { text: 'CSS', link: '/Frontend/CSS' }
+        ]
+      }
       // { text: '关于作者', link: 'https://sugarat.top/aboutme.html' }
     ],
+    sidebar: {
+      '/Frontend/': [
+        {
+          text: 'Javascript',
+          collapsed: false,
+          items: [
+            {
+              text: '对Javascript执行上下文和执行栈的理解',
+              link: '/Frontend/Javascript/Execution-context'
+            }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       {
         icon: 'github',
         link: 'https://github.com/lmz2003/'
       }
-    ],
+    ]
   }
-})
+});

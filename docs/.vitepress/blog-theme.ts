@@ -1,5 +1,5 @@
 // 主题独有配置
-import { getThemeConfig } from '@sugarat/theme/node'
+import { getThemeConfig } from '@sugarat/theme/node';
 
 // 开启RSS支持（RSS配置）
 // import type { Theme } from '@sugarat/theme'
@@ -31,7 +31,7 @@ const blogTheme = getThemeConfig({
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: 'MIT License | 李程碑',
+    copyright: 'MIT License | 李程碑'
     // icpRecord: {
     //   name: '蜀ICP备19011724号',
     //   link: 'https://beian.miit.gov.cn/'
@@ -44,7 +44,7 @@ const blogTheme = getThemeConfig({
 
   // 主题色修改
   themeColor: 'el-blue',
-
+  recommend: false,
   // 文章默认作者
   author: '李程碑',
   home: {
@@ -57,15 +57,14 @@ const blogTheme = getThemeConfig({
       des: '聊天对话机器人',
       avatar:
         'https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png',
-      url: 'https://ai-dialog.maozi.io/',
+      url: 'https://ai-dialog.maozi.io/'
     },
     {
       nickname: 'Vitepress',
       des: 'Vite & Vue Powered Static Site Generator',
-      avatar:
-        'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
-    },
+      avatar: 'https://vitepress.dev/vitepress-logo-large.webp',
+      url: 'https://vitepress.dev/'
+    }
   ],
 
   // 公告
@@ -75,7 +74,7 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇 微信 👇' },
       {
         type: 'image',
-        src: "/weixin.png"
+        src: '/weixin.png'
       },
       {
         type: 'text',
@@ -85,7 +84,7 @@ const blogTheme = getThemeConfig({
         type: 'button',
         content: '作者博客',
         link: 'https://blog-lemonz.maozi.io/'
-      },
+      }
       // {
       //   type: 'button',
       //   content: '加群交流',
@@ -96,7 +95,7 @@ const blogTheme = getThemeConfig({
       // }
     ],
     duration: 0
-  },
-})
+  }
+});
 
-export { blogTheme }
+export { blogTheme };
