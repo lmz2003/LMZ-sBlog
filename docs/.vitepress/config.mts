@@ -57,7 +57,7 @@ export default defineConfig({
       {
         text: '前端基础',
         items: [
-          { text: 'JavaScript', link: '/Frontend/Javascript' },
+          { text: 'JavaScript', link: '/Frontend/JavaScript' },
           { text: 'CSS', link: '/Frontend/CSS' }
         ]
       }
@@ -71,7 +71,7 @@ export default defineConfig({
           items: [
             {
               text: '对Javascript执行上下文和执行栈的理解',
-              link: '/Frontend/Javascript/Execution-context'
+              link: '/Frontend/JavaScript/Execution-context'
             }
           ]
         }
