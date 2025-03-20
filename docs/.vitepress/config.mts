@@ -61,7 +61,16 @@ export default defineConfig({
           { text: 'JavaScript', link: '/Frontend/JavaScript' },
           { text: 'CSS', link: '/Frontend/CSS' }
         ]
+      },
+      { text: '面试', link: '/Interview' },
+      {
+        text: '个人项目',
+        items: [
+          { text: 'AiDialog', link: '/Project/AiDialog' },
+          { text: '教学后台管理', link: '/Project/Manage' }
+        ]
       }
+
       // { text: '关于作者', link: 'https://sugarat.top/aboutme.html' }
     ],
     sidebar: {
@@ -73,6 +82,70 @@ export default defineConfig({
             {
               text: '对Javascript执行上下文和执行栈的理解',
               link: '/Frontend/JavaScript/Execution-context'
+            }
+          ]
+        },
+        {
+          text: 'CSS',
+          collapsed: false,
+          items: [
+            {
+              // text: '对Javascript执行上下文和执行栈的理解',
+              // link: '/Frontend/JavaScript/Execution-context'
+            }
+          ]
+        }
+      ],
+      '/Interview/': [
+        {
+          text: '面试',
+          collapsed: false,
+          items: [
+            {
+              // text: '对Javascript执行上下文和执行栈的理解',
+              // link: '/Frontend/JavaScript/Execution-context'
+            }
+          ]
+        }
+      ],
+      '/Project/': [
+        {
+          text: '大模型对话系统',
+          collapsed: false,
+          items: [
+            {
+              text: 'AiDialog项目功能详解',
+              link: '/Project/AiDialog/ai-dialog'
+            },
+            {
+              text: 'BaseDialog组件详解',
+              link: '/Project/AiDialog/BaseDialog'
+            },
+            {
+              text: 'ChatAside组件详解',
+              link: '/Project/AiDialog/ChatAside'
+            },
+            {
+              text: 'ChatHeader组件详解',
+              link: '/Project/AiDialog/ChatHeader'
+            },
+            {
+              text: 'ChatMain组件详解',
+              link: '/Project/AiDialog/ChatMain'
+            },
+            {
+              text: '内联对话框组件详解',
+              link: '/Project/AiDialog/InnerDialog'
+            }
+          ]
+        },
+        {
+          text: '教学后台管理系统',
+          collapsed: false,
+          items: [
+            {
+              text: '教学后台管理系统项目功能详解',
+              link: '/Project/Manage/manage'
             }
           ]
         }
