@@ -62,7 +62,17 @@ export default defineConfig({
           { text: 'CSS', link: '/Frontend/CSS' }
         ]
       },
-      { text: '面试', link: '/Interview' },
+      {
+        text: '计算机基础',
+        items: [
+          { text: 'JavaScript', link: '/Frontend/JavaScript' },
+          { text: 'CSS', link: '/Frontend/CSS' }
+        ]
+      },
+      {
+        text: '面试',
+        items: [{ text: '蚂蚁集团面试', link: '/Interview/mayi' }]
+      },
       {
         text: '个人项目',
         items: [
@@ -98,12 +108,12 @@ export default defineConfig({
       ],
       '/Interview/': [
         {
-          text: '面试',
+          text: '',
           collapsed: false,
           items: [
             {
-              // text: '对Javascript执行上下文和执行栈的理解',
-              // link: '/Frontend/JavaScript/Execution-context'
+              text: '蚂蚁一面(支付宝国际版)',
+              link: '/Interview/mayi/mayifirst'
             }
           ]
         }
