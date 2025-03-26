@@ -92,6 +92,14 @@ export default defineConfig({
             {
               text: '对Javascript执行上下文和执行栈的理解',
               link: '/Frontend/JavaScript/Execution-context'
+            },
+            {
+              text: '可选链运算符(?.)的使用',
+              link: '/Frontend/JavaScript/可选链运算符'
+            },
+            {
+              text: '了解哪些ES新特性',
+              link: '/Frontend/JavaScript/了解哪些ES新特性'
             }
           ]
         },
